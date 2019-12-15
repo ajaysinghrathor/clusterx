@@ -16,7 +16,6 @@ configurations {
 	}
 }
 
-buildScan { termsOfServiceUrl = "https://gradle.com/terms-of-service"; termsOfServiceAgree = "yes" }
 
 repositories {
 	mavenCentral()
@@ -49,4 +48,8 @@ test {
 asciidoctor {
 	inputs.dir snippetsDir
 	dependsOn test
+}
+
+jar{
+     enabled = true
 }
